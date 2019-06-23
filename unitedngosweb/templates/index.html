@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello Universe</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <p>Demonstrate Django template.... and the creator is : {{creatorName}}</p>
+<br/>
+<form method="POST" action="/seeanswer">
+    {% csrf_token %}
+<label for="test">type your answer</label>
+<textarea rows="5" name="test" id="test"></textarea><button>check</button>
+</form>
+
+
+</body>
+
+</html>
